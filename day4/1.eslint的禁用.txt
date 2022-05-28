@@ -1,0 +1,21 @@
+eslint的配置的错误级别
+	1、
+	// 局部禁用某个错误提示,只禁用当前文件当前类型的错误
+	/* eslint-disable no-unused-vars */
+	
+
+	2、
+	//package.json当中找到eslintConfig项，全局配置禁用某些错误提示
+	"rules": {
+		"no-unused-vars":"off"
+    	}
+	
+	3、
+	//开发阶段直接关闭eslint的提示功能
+
+	手动创建vue.config.js
+	module.exports = {
+		//  写自己想要配置的东西去覆盖系统自带的
+		// 关闭ESLint的规则
+ 		lintOnSave: false
+	}
